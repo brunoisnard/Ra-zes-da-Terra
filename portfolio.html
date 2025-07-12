@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio: Raízes da Terra Alongadas - Nuna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Configurações Gerais e Cores --- */
+        :root {
+            --cor-fundo: #F4F1EE; /* Um branco-gelo sofisticado */
+            --cor-texto-principal: #4A3F35; /* Marrom escuro, inspirado na madeira */
+            --cor-titulo: #2F3D2F; /* Verde-floresta profundo e sóbrio */
+            --cor-detalhe: #B9A489; /* Um bege/dourado queimado para detalhes */
+            --fonte-titulo: 'Cormorant Garamond', serif;
+            --fonte-corpo: 'Lato', sans-serif;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-principal);
+            font-family: var(--fonte-corpo);
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* --- Container Principal --- */
+        .portfolio-container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: #FFFFFF;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* --- Layout em Duas Colunas --- */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .coluna-imagem {
+            flex: 1 1 45%;
+            min-width: 320px;
+            background-color: #EAE6E1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .coluna-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .coluna-texto {
+            flex: 1 1 55%;
+            padding: 50px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* --- Estilos de Texto e Títulos --- */
+        h1 {
+            font-family: var(--fonte-titulo);
+            font-size: 2.8em;
+            color: var(--cor-titulo);
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .artista-nome {
+            font-family: var(--fonte-corpo);
+            font-size: 1.1em;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--cor-detalhe);
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1em;
+            font-weight: 400;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .texto-conceitual {
+            font-style: italic;
+            color: #6c5f53;
+            border-left: 3px solid var(--cor-detalhe);
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        /* --- Ficha Técnica --- */
+        .ficha-tecnica {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #F9F7F5;
+            border-radius: 5px;
+        }
+
+        .ficha-tecnica h3 {
+            font-family: var(--fonte-titulo);
+            font-weight: 600;
+            color: var(--cor-titulo);
+            margin-top: 0;
+            border-bottom: 1px solid var(--cor-detalhe);
+            padding-bottom: 10px;
+        }
+
+        .ficha-tecnica ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ficha-tecnica li {
+            margin-bottom: 8px;
+        }
+
+        .ficha-tecnica strong {
+            font-weight: 700;
+            color: var(--cor-texto-principal);
+        }
+
+        /* --- Player de Áudio --- */
+        .audio-player {
+            margin-top: 30px;
+        }
+        
+        .audio-player h3 {
+             font-family: var(--fonte-titulo);
+             font-weight: 600;
+             color: var(--cor-titulo);
+        }
+
+        .audio-player iframe {
+            border-radius: 5px;
+            border: 1px solid #e0d9cf;
+        }
+
+        /* --- Responsividade para Telas Menores --- */
+        @media (max-width: 900px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .coluna-texto {
+                padding: 40px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-container">
+        <div class="content-wrapper">
+
+            <div class="coluna-imagem">
+                <img src="raizes_da_terra.jpg" alt="Escultura Raízes da Terra Alongadas de Nuna">
+            </div>
+
+            <div class="coluna-texto">
+                <h1>Raízes da Terra Alongadas</h1>
+                <p class="artista-nome">Uma obra de Nuna</p>
+
+                <p class="texto-conceitual">
+                    A terceira de uma série conceitual que reflete sobre o ciclo da vida e a resiliência da natureza. Nuna transforma o que estava em desintegração em uma poderosa manifestação artística, convidando à contemplação da beleza da impermanência e da capacidade de renovação.
+                </p>
+
+                <p>
+                    "Raízes da Terra Alongadas" é uma notável escultura que explora a reconexão humana com a natureza. A obra utiliza madeiras de cajacatinga em decomposição, coletadas na Mata Atlântica e meticulosamente trabalhadas para evocar a vitalidade do ciclo da vida. A seleção e transformação desses materiais descartados resultam em uma peça que equilibra volume e leveza, simulando o movimento ascendente das raízes.
+                </p>
+
+                <div class="ficha-tecnica">
+                    <h3>Ficha Técnica</h3>
+                    <ul>
+                        <li><strong>Material:</strong> Madeiras Cajacatinga em decomposição natural.</li>
+                        <li><strong>Origem:</strong> Coleta sustentável na Mata Atlântica.</li>
+                        <li><strong>Estrutura:</strong> Oito volumes interligados.</li>
+                        <li><strong>Dimensões (por volume):</strong> Aprox. 1,60m de altura por 40cm de largura.</li>
+                        <li><strong>Série:</strong> 3ª Obra da série conceitual.</li>
+                    </ul>
+                </div>
+
+                <div class="audio-player">
+                    <h3>Comentário sobre a Obra</h3>
+                     <iframe width="100%" height="60" src="https://voca.ro/embed/16lNHCL3eu0t?autoplay=0" frameborder="0" allow="autoplay"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
