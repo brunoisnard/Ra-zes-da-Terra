@@ -90,7 +90,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             color: var(--cor-detalhe);
-            margin-bottom: 30px;
+            margin-bottom: 15px; /* Ajustado para dar espaço ao link do Instagram */
         }
 
         p {
@@ -98,6 +98,25 @@
             font-weight: 400;
             text-align: justify;
             margin-bottom: 20px;
+        }
+        
+        /* ✅ NOVO ESTILO PARA O LINK DO INSTAGRAM ✅ */
+        .instagram-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: var(--cor-detalhe);
+            border: 1px solid var(--cor-detalhe);
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .instagram-link:hover {
+            background-color: var(--cor-detalhe);
+            color: #FFFFFF;
         }
 
         .texto-conceitual {
@@ -182,6 +201,10 @@
                 <h1>Raízes da Terra Alongadas</h1>
                 <p class="artista-nome">Uma obra de Nuna</p>
 
+                <a href="https://www.instagram.com/nunaemmovimento?igsh=MWYxbmQ0ZjNpemI4Nw==" target="_blank" class="instagram-link">
+                    Ver no Instagram
+                </a>
+                
                 <p class="texto-conceitual">
                     A terceira de uma série conceitual que reflete sobre o ciclo da vida e a resiliência da natureza. Nuna transforma o que estava em desintegração em uma poderosa manifestação artística, convidando à contemplação da beleza da impermanência e da capacidade de renovação.
                 </p>
